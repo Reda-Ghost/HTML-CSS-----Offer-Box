@@ -1,0 +1,85 @@
+/* start global rules */
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-family: sans-serif;
+}
+::selection {
+  background-color: var(--buttonColor);
+  color: white;
+}
+:root {
+	--backgroundColor: #51509b;
+	--buttonColor: #e5af40;
+	--borderRadius: 10px;
+  --boxShadow : 0px 0px 28px 17px #3357a7;
+	--mainColor: white;
+}
+/* end global rules */
+
+/* media queries */
+@media (min-width:0px) and (max-width:720px){
+  div.container {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+  div.content {
+    width: 100%;
+    padding: 0 30px;
+    padding-top: 40px;
+  }
+  .content > h2 {
+    font-size: 32px;
+  }
+  .content > h2 + i + p {
+    color: var(--mainColor);
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    margin-top: 30px;
+  }
+  div.cards {
+    display: block;
+  }
+  .premium {
+    margin-bottom: 30px;
+  }
+  .essential {
+    display: block;
+    align-items: center;
+    border-radius: var(--borderRadius);
+  }
+  .maxcontent {
+    border-radius: var(--borderRadius);
+  }
+}
+@media (min-width: 510px) and (max-width: 720px){
+  div.content {
+    max-width: 544px;
+  }
+}
+@media (min-width: 720.1px) and (max-width: 1000px){
+  div.container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  div.content {
+    max-width: 100%;
+  }
+}
+
