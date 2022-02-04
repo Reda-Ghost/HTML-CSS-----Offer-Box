@@ -21,6 +21,7 @@ body {
 div.container {
 	background-image: linear-gradient(90deg, #952f88, #1b7491);
 	width: 75%;
+	max-width: 985px;
 	margin: 5vh auto;
 	border-radius: var(--borderRadius);
 	padding-bottom: 80px;
